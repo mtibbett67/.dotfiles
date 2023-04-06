@@ -8,7 +8,7 @@ Run setup.sh to copy the .tmux.conf to the current users home folder.<br>
 
 Setup the plugin manager - https://github.com/tmux-plugins/tpm
 
-Step 1) git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm<br>
+Step 1) Git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm<br>
 Step 2) Reload tmux if it's already started with leader + r <br>
 Step 3) Launch tmux and hit leader + I (capital i) to fetch any plugins<br>
 
