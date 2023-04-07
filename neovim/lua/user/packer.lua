@@ -42,8 +42,6 @@ return require('packer').startup(function(use)
   use("tpope/vim-fugitive")
   use("nvim-treesitter/nvim-treesitter-context");
 
-  use("christoomey/vim-tmux-navigator")
-
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v1.x',
