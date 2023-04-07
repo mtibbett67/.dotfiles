@@ -18,6 +18,7 @@ https://github.com/tmux-plugins/
 # Plugins supportd by this conf file:
 https://github.com/tmux-plugins/tpm<br>
 https://github.com/tmux-plugins/tmux-resurrect<br>
+
 https://github.com/tmux-plugins/tmux-continuum<br>
 https://github.com/tmux-plugins/tmux-logging<br>
 https://github.com/tmux-plugins/tmux-yank<br>
