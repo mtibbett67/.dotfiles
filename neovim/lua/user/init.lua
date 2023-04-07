@@ -1,6 +1,7 @@
 require("user.packer")
 require("user.set")
 require("user.remap")
+require("user.lualine")
 
 local augroup = vim.api.nvim_create_augroup
 local userGroup = augroup('user', {})

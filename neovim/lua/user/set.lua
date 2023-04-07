@@ -21,6 +21,7 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
+vim.opt.background = "dark" -- colorschemes that can be light or dark will be made dark
 
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"

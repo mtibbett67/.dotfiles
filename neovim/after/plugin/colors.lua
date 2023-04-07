@@ -1,8 +1,17 @@
+-- set colorscheme to nightfly with protected call
+-- in case it isn't installed
+local status, _ = pcall(vim.cmd, "colorscheme nightfly")
+if not status then
+  print("Colorscheme not found!") -- print error if colorscheme not installed
+  return
+end
+
+--[[
 require('rose-pine').setup({
     disable_background = true
 })
 
-function ColorMyPencils(color) 
+function ColorMyPencils(color)
 	color = color or "rose-pine"
 	vim.cmd.colorscheme(color)
 
@@ -12,3 +21,4 @@ function ColorMyPencils(color)
 end
 
 ColorMyPencils()
+--]]
