@@ -40,11 +40,7 @@ alias vi="nvim"
 alias vim="nvim"
 alias oldvim="\vim"
 alias ls="ls -lh --color=auto --group-directories-first"
-alias ll="ls -lah --color=auto --group-directories-first"
-#alias l='ls -CF'
-#alias la='ls -A'
-#alias ll='ls -alF'
-#alias ls='ls --color=auto'
+alias ll="ls -lAh --color=auto --group-directories-first"
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
