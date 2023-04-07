@@ -1,4 +1,5 @@
--- auto install packer if not installed
+
+--auto install packer if not installed
 local ensure_packer = function()
   local fn = vim.fn
   local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
@@ -83,7 +84,9 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
+  use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
+  use("szw/vim-maximizer") -- maximizes and restores current window
   use("nvim-lualine/lualine.nvim")
   use("folke/zen-mode.nvim")
   use("github/copilot.vim")
