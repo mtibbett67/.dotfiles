@@ -1,7 +1,7 @@
 # My Configuration files
-bash
-neovim
-screen
-tmux
-vim
-zsh
+bash<br>
+neovim<<br>
+screen<br>
+tmux<br>
+vim<br>
+zsh<br>
