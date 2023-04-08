@@ -20,6 +20,9 @@ vim.keymap.set("n", "<leader>svwm", function()
     require("vim-with-me").StopVimWithMe()
 end)
 
+-- turn on spelling checker
+vim.keymap.set("n", "<leader>sp", "<cmd>set spell!<CR>")
+
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
 

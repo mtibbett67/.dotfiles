@@ -31,3 +31,6 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
+vim.opt.spelllang = "en_us"
+-- vim.opt.spell = true -- this is in remap.lua as a <F7> hot key
+

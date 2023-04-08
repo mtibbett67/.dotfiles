@@ -81,4 +81,3 @@ alias gf='git reflog'
 
 # leverage an alias from the ~/.gitconfig
 alias gh='git hist'
-
