@@ -1,6 +1,6 @@
 # My Configuration files
 bash<br>
-neovim<<br>
+neovim<br>
 screen<br>
 tmux<br>
 vim<br>
