@@ -26,14 +26,15 @@ autocmd('TextYankPost', {
     end,
 })
 
-autocmd({"BufWritePre"}, {
-    group = userGroup,
-    pattern = "*",
-    command = [[%s/\s\+$//e]],
-})
+-- autocmd({"BufWritePre"}, {
+--     group = userGroup,
+--     pattern = "*",
+--     command = [[%s/\s\+$//e]],
+-- })
 
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
 
+-- set neovim background with Nightfly to tranparent
 vim.g.nightflyTransparent = true
