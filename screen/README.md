@@ -1,4 +1,4 @@
-# screenrc
+### screenrc
 Main screen configuration file
 This file creates 5 connections
 1. Root Terminal
@@ -11,7 +11,7 @@ Make the setup.sh executable with chmod +x
 
 Run setup.sh to copy the main to .screenrc in the current users home folder.
 
-# Stats
+### Stats
 Screen configuration file with three panels for monitoring different system stats
 
 Make the setup.sh executable with chmod +x
