@@ -38,6 +38,7 @@ function colormap() {
 # ALIAS COMMANDS
 alias vi="nvim"
 alias vim="nvim"
+alias nv="nvim"
 alias oldvim="\vim"
 alias ls="ls -lh --color=auto --group-directories-first"
 alias ll="ls -lAh --color=auto --group-directories-first"
