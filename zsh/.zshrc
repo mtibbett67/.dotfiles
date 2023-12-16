@@ -36,6 +36,7 @@ function colormap() {
 }
 
 # ALIAS COMMANDS
+alias devops="tmux new -s devops"
 alias vi="nvim"
 alias vim="nvim"
 alias nv="nvim"
