@@ -33,7 +33,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
+	  'nvim-telescope/telescope.nvim', tag = '0.1.5',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
@@ -60,7 +60,11 @@ return require('packer').startup(function(use)
   use("theprimeagen/refactoring.nvim")
   use("mbbill/undotree")
   use("tpope/vim-fugitive")
+  use("tpope/vim-surround")
   use("nvim-treesitter/nvim-treesitter-context")
+  use({"nvim-telescope/telescope-fzf-native.nvim", run = "make"})
+  use( "cljoly/telescope-repo.nvim")
+  use("airblade/vim-rooter")
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
