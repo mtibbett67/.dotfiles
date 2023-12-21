@@ -8,7 +8,6 @@ bindkey -v
 
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/mark/.zshrc'
-
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
@@ -46,7 +45,6 @@ alias ll="ls -lAh --color=auto --group-directories-first"
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
-alias grep='grep --color=auto'
 
 # Make xclip easy to use
 alias clipboard='xclip -selection clipboard'
@@ -80,6 +78,3 @@ alias gpu='git pull'
 alias gcl='git clone'
 alias gta='git tag -a -m'
 alias gf='git reflog'
-
-# leverage an alias from the ~/.gitconfig
-alias gh='git hist'
