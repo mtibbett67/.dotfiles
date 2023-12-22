@@ -5,6 +5,17 @@ lsp.preset("recommended")
 lsp.ensure_installed({
 })
 
+-- Fix Undefined global 'vim'
+lsp.configure('lua-language-server', {
+    settings = {
+        Lua = {
+            diagnostics = {
+                globals = { 'vim' }
+            }
+        }
+    }
+})
+
 local cmp = require("cmp")
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 local cmp_mappings = lsp.defaults.cmp_mappings({
@@ -14,30 +25,21 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
     ["<C-Space>"] = cmp.mapping.complete(),
 })
 
-lsp.set_preferences({
-    sign_icons = {
-        -- error = "E",
-        -- warn = "W",
-        -- hint = "H",
-        -- info = "I",
-    }
-})
-
-vim.diagnostic.config({
-    virtual_text = false,
-    severity_sort = true,
-    globals = { "vim" },
-    float = {
-        style = "minimal",
-        border = "rounded",
-        source = "always",
-        header = "",
-        prefix = "",
-    },
-})
+cmp_mappings['<Tab>'] = nil
+cmp_mappings['<S-Tab>'] = nil
 
 lsp.setup_nvim_cmp({
     mapping = cmp_mappings
+})
+
+lsp.set_preferences({
+    sudggest_lsp_servers = true,
+    sign_icons = {
+        error = "E",
+        warn = "W",
+        hint = "H",
+        info = "I",
+    }
 })
 
 lsp.on_attach(function(client, bufnr)
@@ -56,3 +58,15 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+
+vim.diagnostic.config({
+    virtual_text = true,
+    severity_sort = true,
+    float = {
+        style = "minimal",
+        border = "rounded",
+        source = "always",
+        header = "",
+        prefix = "",
+    }
+})
