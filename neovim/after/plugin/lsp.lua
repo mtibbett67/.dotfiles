@@ -3,10 +3,6 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-    "tsserver",
-    "eslint",
-    "rust_analyzer",
-    "yamlls",
 })
 
 local cmp = require("cmp")
@@ -30,6 +26,7 @@ lsp.set_preferences({
 vim.diagnostic.config({
     virtual_text = false,
     severity_sort = true,
+    globals = { "vim" },
     float = {
         style = "minimal",
         border = "rounded",
@@ -37,7 +34,6 @@ vim.diagnostic.config({
         header = "",
         prefix = "",
     },
-    globals = { "vim" },
 })
 
 lsp.setup_nvim_cmp({

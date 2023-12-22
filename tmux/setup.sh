@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 cp ./.tmux.conf ~/.tmux.conf
 echo "To install the plugin manager:"
 echo "Step 1) git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm"
