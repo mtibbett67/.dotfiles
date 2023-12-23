@@ -59,7 +59,7 @@ alias oj='jobs && echo "Select a job" && read num && fg %$num'
 # make some commands (potentially) less destructive
 # -------------------------------------------------------------------
 alias 'rm=rm -i'
-
+alias 'rm -rf=rm -rfi'
 # -------------------------------------------------------------------
 # Git
 # -------------------------------------------------------------------
