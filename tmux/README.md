@@ -10,7 +10,7 @@ Step 3) Launch tmux and hit leader + I (capital i) to fetch any plugins<br>
 ## A list of Tmux plugins can be found here
 https://github.com/tmux-plugins/
 
-## Plugins supportd by this conf file:
+## Plugins supported by this conf file:
 https://github.com/tmux-plugins/tpm<br>
 https://github.com/tmux-plugins/tmux-resurrect<br>
 
