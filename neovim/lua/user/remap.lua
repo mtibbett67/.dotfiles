@@ -54,3 +54,18 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+
+-- My macro keys
+-- Markdown
+vim.keymap.set({ "i", "n" }, ";<Cr>", "<Esc>A<br><Esc>0<Cr>")
+vim.keymap.set({ "i", "n" }, ";b", "<Esc>:normal ysiw*wysiw*<Cr>")
+vim.keymap.set({ "i", "n" }, ";i", "<Esc>:normal ysiw*<Cr>")
+vim.keymap.set("i", ";l", "[title](link)<Esc>F[ll")
+vim.keymap.set("i", ";d", "![alt text](image.jpg)<Esc>F[ll")
+
+
+-- This line of text is for testing on.
+
+
+
+
