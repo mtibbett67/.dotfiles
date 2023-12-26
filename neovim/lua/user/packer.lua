@@ -63,7 +63,7 @@ return require('packer').startup(function(use)
     use("nvim-treesitter/nvim-treesitter-context")
     use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
     use("cljoly/telescope-repo.nvim")
-    use("airblade/vim-rooter")
+    --use("airblade/vim-rooter")
 
     use {
         'VonHeikemen/lsp-zero.nvim',
