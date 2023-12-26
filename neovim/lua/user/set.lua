@@ -1,10 +1,11 @@
 vim.opt.termguicolors = true
-vim.opt.background = "dark" -- colorschemes that can be light or dark will be made dark
+vim.opt.background = "dark"
 vim.opt.guicursor = "a:block"
 
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+vim.opt.formatoptions = "c"
 vim.opt.wrap = false
 vim.opt.scrolloff = 8
 vim.opt.colorcolumn = "80"
