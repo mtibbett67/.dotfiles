@@ -1,6 +1,6 @@
 # Compiled Lua sources
 luac.out
-plugin/packer_compiled.lua
+neovim/plugin/packer_compiled.lua
 
 # Log files
 *.Log
