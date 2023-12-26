@@ -56,16 +56,17 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 -- My macro keys
+-- Move to next guide <++>
+vim.keymap.set({ "i", "n" }, ";j", "<Esc>/<++><Cr>\"_c4l")
+
 -- Markdown
 vim.keymap.set({ "i", "n" }, ";<Cr>", "<Esc>A<br><Esc>0<Cr>")
 vim.keymap.set({ "i", "n" }, ";b", "<Esc>:normal ysiw*wysiw*<Cr>")
 vim.keymap.set({ "i", "n" }, ";i", "<Esc>:normal ysiw*<Cr>")
-vim.keymap.set("i", ";l", "[title](link)<Esc>F[ll")
-vim.keymap.set("i", ";d", "![alt text](image.jpg)<Esc>F[ll")
+vim.keymap.set("i", ";l", "[title](link)<Esc>F[2l")
+vim.keymap.set("i", ";d", "![alt text](image.jpg)<Esc>F[2l")
+vim.keymap.set("i", ";c", "<Esc>i```<Space>lang<Cr>```<Cr><++><Esc>02k/lang<Cr>")
 
-
--- This line of text is for testing on.
-
-
+-- This line of text is for testing on. <++>
 
 
