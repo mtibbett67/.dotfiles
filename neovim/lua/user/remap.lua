@@ -38,7 +38,7 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- Fixes issue with Ctrl+c in vertical edit mode
--- "This is going to get me cancelled"
+-- "This is going to get me canceled"
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 -- Stops from accidentally running a macro
