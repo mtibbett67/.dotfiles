@@ -65,7 +65,7 @@ vim.keymap.set({ "i", "n" }, ";b", "<Esc>:normal ysiw*wysiw*<Cr>")
 vim.keymap.set({ "i", "n" }, ";i", "<Esc>:normal ysiw*<Cr>")
 vim.keymap.set("i", ";l", "[title](link)<Esc>F[2l")
 vim.keymap.set("i", ";d", "![alt text](image.jpg)<Esc>F[2l")
-vim.keymap.set("i", ";c", "<Esc>i```<Space>lang<Cr>```<Cr><++><Esc>02k/lang<Cr>")
+vim.keymap.set("i", ";c", "<Esc>i```<Space>lang<Cr><Cr>```<Cr><++><Esc>02k/lang<Cr>")
 
 -- This line of text is for testing on. <++>
 
