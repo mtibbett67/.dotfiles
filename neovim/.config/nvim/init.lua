@@ -1,5 +1,6 @@
---[[
-require("user.remap")
+-- require("user.remap")
+require("vim-options")
+require("remap")
 
 local augroup = vim.api.nvim_create_augroup
 
@@ -35,8 +36,6 @@ autocmd('TextYankPost', {
 --vim.g.nightflyTransparent = true
 --]]
 
-require("lua.vim-options")
-require("lua.remap")
 
 -- Setup Lazy package manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -68,9 +67,9 @@ local plugins = {
     ---@module "neo-tree"
     ---@type neotree.Config?
     opts = {
-      -- fill any relevant options here
-    }
-  }
+            -- fill any relevant options here
+            },
+    },
 }
 
 local opts = {}
@@ -80,7 +79,7 @@ require("lazy").setup(plugins, opts)
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<C-n>', ':Neotree toggle<CR>' )
+vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>' )
 
 local config = require("nvim-treesitter.configs")
 config.setup({
