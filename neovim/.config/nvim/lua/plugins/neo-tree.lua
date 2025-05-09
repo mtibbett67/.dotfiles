@@ -2,7 +2,7 @@ return {
   "nvim-neo-tree/neo-tree.nvim",
   branch = "v3.x",
     dependencies = {
-      "nvim-lua/plenary.nvim",
+      "nvim-lpnua/plenary.nvim",
       "nvim-tree/nvim-web-devicons",
       "MunifTanjim/nui.nvim",
     },
@@ -17,6 +17,6 @@ return {
         },
       },
     })
-    vim.keymap.set('n', '<leader>pn', ':Neotree filesystem reveal left<CR>' )
+    vim.keymap.set('n', '<leader>pv', ':Neotree filesystem reveal left<CR>' )
   end
 }

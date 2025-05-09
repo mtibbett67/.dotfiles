@@ -1,9 +1,6 @@
 -- Remap Leader keymap
 vim.g.mapleader = " "
 
--- Open file file search
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-
 -- Remap Esc to jk
 vim.keymap.set({ "i", "v" }, "jk", "<Esc>", options)
 
