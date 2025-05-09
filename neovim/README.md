@@ -6,6 +6,7 @@ harpoon<br>
 telescope<br>
 treesitter<br>
 lsp<br>
+lualine<br>
 
 ### Plugins not installed:<br>
 cloak<br>
