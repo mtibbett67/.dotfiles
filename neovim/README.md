@@ -15,5 +15,3 @@ refactoring<br>
 trouble<br>
 undotree<br>
 zenmode
-
-
