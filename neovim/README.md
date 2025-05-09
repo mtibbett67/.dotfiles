@@ -1,5 +1,11 @@
 # My Neovim config files.
 
+<!--toc:start-->
+- [My Neovim config files.](#my-neovim-config-files)
+    - [Plugins installed:<br>](#plugins-installedbr)
+    - [Plugins not installed:<br>](#plugins-not-installedbr)
+<!--toc:end-->
+
 ### Plugins installed:<br>
 fzf<br>
 harpoon<br>
