@@ -1,14 +1,12 @@
 # My Neovim config files.
 
-# Maybe move from Packer to Lazy
-
-## Plugins installed:<br>
+### Plugins installed:<br>
 fzf<br>
 harpoon<br>
 telescope<br>
 treesitter<br>
 
-## Plugins not installed:<br>
+### Plugins not installed:<br>
 cloak<br>
 colors<br>
 fugitive<br>
