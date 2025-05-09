@@ -2,7 +2,7 @@
 vim.g.mapleader = " "
 
 -- Remap Esc to jk
-vim.keymap.set({ "i", "v" }, "jk", "<Esc>", options)
+vim.keymap.set({ "i", "v" }, "jk", "<Esc>")
 
 -- Set J and K to move lines in visual mode
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
