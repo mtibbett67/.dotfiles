@@ -3,19 +3,19 @@
 # Maybe move from Packer to Lazy
 
 Plugins installed:<br>
-fzf.lua<br>
-harpoon.lua<br>
-telescope.lua<br>
-treesitter.lua<br>
+fzf<br>
+harpoon<br>
+telescope<br>
+treesitter<br>
 
 Plugins not installed:<br>
-cloak.lua<br>
-colors.lua<br>
-fugitive.lua<br>
-lsp.lua<br>
-refactoring.lua<br>
-trouble.lua<br>
-undotree.lua<br>
-zenmode.lua
+cloak<br>
+colors<br>
+fugitive<br>
+lsp<br>
+refactoring<br>
+trouble<br>
+undotree<br>
+zenmode
 
 
