@@ -41,9 +41,6 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 -- Stops from accidentally running a macro
 vim.keymap.set("n", "Q", "<nop>")
 
--- LSP format
-vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
-
 -- Starts search/replace with the word you are currently on
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
