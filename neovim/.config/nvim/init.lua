@@ -1,9 +1,6 @@
 require("vim-options")
 require("vim-remap")
 
--- set neovim background with Nightfly to tranparent
-vim.g.nightflyTransparent = true
-
 -- Setup Lazy package manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -19,6 +16,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
+
+-- set neovim background with Nightfly to tranparent
+-- vim.g.nightflyTransparent = true
 
 --[[
 local augroup = vim.api.nvim_create_augroup
