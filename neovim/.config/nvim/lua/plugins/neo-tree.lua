@@ -7,8 +7,20 @@ return {
     "MunifTanjim/nui.nvim",
   },
   config = function()
-    close_if_last_window = true
     require("neo-tree").setup({
+      event_handlers = {
+
+        {
+          event = "file_open_requested",
+          handler = function()
+            -- auto close
+            -- vim.cmd("Neotree close")
+            -- OR
+            require("neo-tree.command").execute({ action = "close" })
+          end
+        },
+
+      },
       filesystem = {
         filtered_items = {
           visible = true, -- when true, they will just be displayed differently than normal items
@@ -18,6 +30,8 @@ return {
         },
       },
     })
-    vim.keymap.set('n', '<leader>pv', ':Neotree filesystem reveal left<CR>')
+    close_if_last_window = true
+    vim.keymap.set('n', '<leader>pv', ':Neotree float<CR>') --filesystem reveal left<CR>')
+    close_if_last_window = true
   end
 }
