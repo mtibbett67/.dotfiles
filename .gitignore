@@ -1,6 +1,7 @@
 # Compiled Lua sources
 luac.out
 neovim/plugin/packer_compiled.lua
+neovim/lazy-lock.json
 
 # Log files
 *.Log

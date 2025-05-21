@@ -10,7 +10,7 @@ return {
     require("neo-tree").setup({
       event_handlers = {
 
-        {
+--[[        {
           event = "file_open_requested",
           handler = function()
             -- auto close
@@ -19,7 +19,7 @@ return {
             require("neo-tree.command").execute({ action = "close" })
           end
         },
-
+--]]
       },
       filesystem = {
         filtered_items = {
@@ -31,7 +31,7 @@ return {
       },
     })
     close_if_last_window = true
-    vim.keymap.set('n', '<leader>pv', ':Neotree float<CR>') --filesystem reveal left<CR>')
+    vim.keymap.set('n', '<leader>pv', ':Neotree reveal left<CR>') --filesystem reveal left<CR>')
     close_if_last_window = true
   end
 }

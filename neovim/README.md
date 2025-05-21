@@ -1,6 +1,7 @@
 # My Neovim config files.
 
 ### Plugins installed:<br>
+catppuccin<br>
 fzf<br>
 harpoon<br>
 telescope<br>
